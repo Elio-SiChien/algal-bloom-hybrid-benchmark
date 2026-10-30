@@ -1,0 +1,342 @@
+[
+  {
+    "run": "M1_chaohu",
+    "python": "3.13.16",
+    "numpy": "2.5.3",
+    "pandas": "3.0.5",
+    "torch": "2.14.1+cu126",
+    "optuna": "5.0.0",
+    "cv_seconds": 21434.7,
+    "final_and_test_seconds": 365.9
+  },
+  {
+    "run": "M1_dianchi",
+    "python": "3.13.16",
+    "numpy": "2.5.3",
+    "pandas": "3.0.5",
+    "torch": "2.14.1+cu126",
+    "optuna": "5.0.0",
+    "cv_seconds": 17132.9,
+    "final_and_test_seconds": 333.3
+  },
+  {
+    "run": "M1_erhai",
+    "python": "3.13.16",
+    "numpy": "2.5.3",
+    "pandas": "3.0.5",
+    "torch": "2.14.1+cu126",
+    "optuna": "5.0.0",
+    "cv_seconds": 31596.9,
+    "final_and_test_seconds": 667.2
+  },
+  {
+    "run": "M1_fuxian",
+    "python": "3.13.16",
+    "numpy": "2.5.3",
+    "pandas": "3.0.5",
+    "torch": "2.14.1+cu126",
+    "optuna": "5.0.0",
+    "cv_seconds": 16920.7,
+    "final_and_test_seconds": 305.6
+  },
+  {
+    "run": "M1_hedi",
+    "python": "3.13.16",
+    "numpy": "2.5.3",
+    "pandas": "3.0.5",
+    "torch": "2.14.1+cu126",
+    "optuna": "5.0.0",
+    "cv_seconds": 8657.3,
+    "final_and_test_seconds": 127.5
+  },
+  {
+    "run": "M1_hongze",
+    "python": "3.13.16",
+    "numpy": "2.5.3",
+    "pandas": "3.0.5",
+    "torch": "2.14.1+cu126",
+    "optuna": "5.0.0",
+    "cv_seconds": 17994.8,
+    "final_and_test_seconds": 279.7
+  },
+  {
+    "run": "M1_liangzi",
+    "python": "3.13.16",
+    "numpy": "2.5.3",
+    "pandas": "3.0.5",
+    "torch": "2.14.1+cu126",
+    "optuna": "5.0.0",
+    "cv_seconds": 22503.4,
+    "final_and_test_seconds": 458.7
+  },
+  {
+    "run": "M1_shahu",
+    "python": "3.13.16",
+    "numpy": "2.5.3",
+    "pandas": "3.0.5",
+    "torch": "2.14.1+cu126",
+    "optuna": "5.0.0",
+    "cv_seconds": 25485.4,
+    "final_and_test_seconds": 425.8
+  },
+  {
+    "run": "M1_taihu",
+    "python": "3.13.16",
+    "numpy": "2.5.3",
+    "pandas": "3.0.5",
+    "torch": "2.14.1+cu126",
+    "optuna": "5.0.0",
+    "cv_seconds": 18727.8,
+    "final_and_test_seconds": 296.4
+  },
+  {
+    "run": "M1_yinghu",
+    "python": "3.13.16",
+    "numpy": "2.5.3",
+    "pandas": "3.0.5",
+    "torch": "2.14.1+cu126",
+    "optuna": "5.0.0",
+    "cv_seconds": 12241.9,
+    "final_and_test_seconds": 502.9
+  },
+  {
+    "run": "M2_chaohu",
+    "python": "3.10.9",
+    "numpy": "1.23.5",
+    "pandas": "2.1.4",
+    "cv_seconds": 8911.9,
+    "final_and_test_seconds": 1171.2
+  },
+  {
+    "run": "M2_dianchi",
+    "python": "3.10.9",
+    "numpy": "1.23.5",
+    "pandas": "2.1.4",
+    "cv_seconds": 9071.1,
+    "final_and_test_seconds": 1201.7
+  },
+  {
+    "run": "M2_erhai",
+    "python": "3.10.9",
+    "numpy": "1.23.5",
+    "pandas": "2.1.4",
+    "cv_seconds": 9857.2,
+    "final_and_test_seconds": 994.7
+  },
+  {
+    "run": "M2_fuxian",
+    "python": "3.10.9",
+    "numpy": "1.23.5",
+    "pandas": "2.1.4",
+    "cv_seconds": 9701.9,
+    "final_and_test_seconds": 1001.3
+  },
+  {
+    "run": "M2_hedi",
+    "python": "3.10.9",
+    "numpy": "1.23.5",
+    "pandas": "2.1.4",
+    "cv_seconds": 9274.3,
+    "final_and_test_seconds": 1142.3
+  },
+  {
+    "run": "M2_hongze",
+    "python": "3.10.9",
+    "numpy": "1.23.5",
+    "pandas": "2.1.4",
+    "cv_seconds": 9968.7,
+    "final_and_test_seconds": 885.5
+  },
+  {
+    "run": "M2_liangzi",
+    "python": "3.10.9",
+    "numpy": "1.23.5",
+    "pandas": "2.1.4",
+    "cv_seconds": 9204.1,
+    "final_and_test_seconds": 1206.9
+  },
+  {
+    "run": "M2_shahu",
+    "python": "3.10.9",
+    "numpy": "1.23.5",
+    "pandas": "2.1.4",
+    "cv_seconds": 8967.6,
+    "final_and_test_seconds": 1220.6
+  },
+  {
+    "run": "M2_taihu",
+    "python": "3.10.9",
+    "numpy": "1.23.5",
+    "pandas": "2.1.4",
+    "cv_seconds": 9560.3,
+    "final_and_test_seconds": 1085.7
+  },
+  {
+    "run": "M2_yinghu",
+    "python": "3.10.9",
+    "numpy": "1.23.5",
+    "pandas": "2.1.4",
+    "cv_seconds": 9581.9,
+    "final_and_test_seconds": 1096.8
+  },
+  {
+    "run": "M3_chaohu",
+    "python": "3.10.9",
+    "numpy": "1.23.5",
+    "pandas": "2.1.4",
+    "cv_seconds": 1534.9,
+    "final_and_test_seconds": 646.0
+  },
+  {
+    "run": "M3_dianchi",
+    "python": "3.10.9",
+    "numpy": "1.23.5",
+    "pandas": "2.1.4",
+    "cv_seconds": 1660.9,
+    "final_and_test_seconds": 651.4
+  },
+  {
+    "run": "M3_erhai",
+    "python": "3.10.9",
+    "numpy": "1.23.5",
+    "pandas": "2.1.4",
+    "cv_seconds": 1603.6,
+    "final_and_test_seconds": 650.5
+  },
+  {
+    "run": "M3_fuxian",
+    "python": "3.10.9",
+    "numpy": "1.23.5",
+    "pandas": "2.1.4",
+    "cv_seconds": 1634.7,
+    "final_and_test_seconds": 658.0
+  },
+  {
+    "run": "M3_hedi",
+    "python": "3.10.9",
+    "numpy": "1.23.5",
+    "pandas": "2.1.4",
+    "cv_seconds": 1644.9,
+    "final_and_test_seconds": 741.9
+  },
+  {
+    "run": "M3_hongze",
+    "python": "3.10.9",
+    "numpy": "1.23.5",
+    "pandas": "2.1.4",
+    "cv_seconds": 1681.0,
+    "final_and_test_seconds": 640.4
+  },
+  {
+    "run": "M3_liangzi",
+    "python": "3.10.9",
+    "numpy": "1.23.5",
+    "pandas": "2.1.4",
+    "cv_seconds": 1725.1,
+    "final_and_test_seconds": 484.2
+  },
+  {
+    "run": "M3_shahu",
+    "python": "3.10.9",
+    "numpy": "1.23.5",
+    "pandas": "2.1.4",
+    "cv_seconds": 1742.4,
+    "final_and_test_seconds": 656.9
+  },
+  {
+    "run": "M3_taihu",
+    "python": "3.10.9",
+    "numpy": "1.23.5",
+    "pandas": "2.1.4",
+    "cv_seconds": 1672.7,
+    "final_and_test_seconds": 551.4
+  },
+  {
+    "run": "M3_yinghu",
+    "python": "3.10.9",
+    "numpy": "1.23.5",
+    "pandas": "2.1.4",
+    "cv_seconds": 1800.2,
+    "final_and_test_seconds": 568.2
+  },
+  {
+    "run": "M4r_chaohu",
+    "python": "3.10.9",
+    "numpy": "1.23.5",
+    "pandas": "2.1.4",
+    "cv_seconds": 429.4,
+    "final_and_test_seconds": 256.5
+  },
+  {
+    "run": "M4r_dianchi",
+    "python": "3.10.9",
+    "numpy": "1.23.5",
+    "pandas": "2.1.4",
+    "cv_seconds": 297.9,
+    "final_and_test_seconds": 145.5
+  },
+  {
+    "run": "M4r_erhai",
+    "python": "3.10.9",
+    "numpy": "1.23.5",
+    "pandas": "2.1.4",
+    "cv_seconds": 303.3,
+    "final_and_test_seconds": 136.4
+  },
+  {
+    "run": "M4r_fuxian",
+    "python": "3.10.9",
+    "numpy": "1.23.5",
+    "pandas": "2.1.4",
+    "cv_seconds": 494.0,
+    "final_and_test_seconds": 261.3
+  },
+  {
+    "run": "M4r_hedi",
+    "python": "3.10.9",
+    "numpy": "1.23.5",
+    "pandas": "2.1.4",
+    "cv_seconds": 329.5,
+    "final_and_test_seconds": 139.4
+  },
+  {
+    "run": "M4r_hongze",
+    "python": "3.10.9",
+    "numpy": "1.23.5",
+    "pandas": "2.1.4",
+    "cv_seconds": 384.8,
+    "final_and_test_seconds": 189.9
+  },
+  {
+    "run": "M4r_liangzi",
+    "python": "3.10.9",
+    "numpy": "1.23.5",
+    "pandas": "2.1.4",
+    "cv_seconds": 345.3,
+    "final_and_test_seconds": 172.4
+  },
+  {
+    "run": "M4r_shahu",
+    "python": "3.10.9",
+    "numpy": "1.23.5",
+    "pandas": "2.1.4",
+    "cv_seconds": 383.8,
+    "final_and_test_seconds": 195.8
+  },
+  {
+    "run": "M4r_taihu",
+    "python": "3.10.9",
+    "numpy": "1.23.5",
+    "pandas": "2.1.4",
+    "cv_seconds": 313.1,
+    "final_and_test_seconds": 178.6
+  },
+  {
+    "run": "M4r_yinghu",
+    "python": "3.10.9",
+    "numpy": "1.23.5",
+    "pandas": "2.1.4",
+    "cv_seconds": 432.6,
+    "final_and_test_seconds": 233.2
+  }
+]

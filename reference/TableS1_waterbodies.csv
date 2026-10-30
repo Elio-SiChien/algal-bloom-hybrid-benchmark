@@ -1,0 +1,11 @@
+Waterbody,Station,Longitude_E,Latitude_N,Reference_area_km2,Reference_mean_depth_m,Reference_water_surface_level_m,Observed_TN_median_mg_L,Observed_TP_median_mg_L,Reference_conditions,Sources
+Lake Dianchi,观音山西,102.6756,24.8372,309.0,5.3,1887.4,1.58,0.0715,High operating level in the 2003 protection plan,D1
+Lake Chaohu,龟山,117.8069,31.6111,774.0,4.09,10.0,1.18,0.046,"All three values at a reported level of 10 m; a reference condition, not the study-year mean",C1
+Lake Taihu,锡东水厂,120.3722,31.4483,2338.0,1.89,2.99,0.98,0.04,Area/depth at ordinary level; level is historical long-term mean (2011 source),T1; T2
+Lake Erhai,洱海湖心,100.1875,25.7633,252.0,10.8,1966.0,0.325,0.018,Reference lake description published in 2025; not a 2024 survey,E1
+Lake Fuxian,抚仙湖心,102.8931,24.5265,216.6,95.2,1722.5,0.145,0.0095,"Statistical table 1-2, PDF p.2; mean water level, not maximum storage level",F1
+Lake Liangzi,西梁子湖湖南,114.4466,30.1954,225.0,2.5,18.25,0.7025,0.0285,2010 protection-plan boundary and long-term reference level; excludes alternative larger lake-system boundaries,L1
+Lake Hongze,临淮乡,118.3691,33.273,2069.0,1.5,12.5,1.4075,0.0725,Source-specific 12.5 m condition; published descriptions differ in boundary and datum,H1
+Lake Shahu,沙湖,106.3728,38.817,45.0,2.2,1098.8,0.62,0.023,"Area/depth: 2024 description; level: reported 2025 minimum, not a study-year mean or a matched bathymetric condition",S1; S2
+Hedi Reservoir,渠首,110.3126,21.7088,122.0,,40.5,1,0.0245,"Area: approximate 2016 description, water level unspecified; level: 2025 normal-storage reference, datum not specified",HD1; HD2
+Yinghu Reservoir,瀛湖坝前,108.8361,32.6041,77.0,,330.0,1.04,0.0265,"Area: 2022 official description, water level unspecified; level: normal storage reported in 2025",Y1; Y2

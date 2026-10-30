@@ -1,0 +1,81 @@
+{
+  "validated_on": "2026-10-30",
+  "platform": "Windows; Python 3.10.9; fresh isolated CPU environment",
+  "analysis_packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "scipy": "1.15.3",
+    "matplotlib": "3.10.8"
+  },
+  "torch": "2.0.1+cpu",
+  "optuna": "4.2.1",
+  "results": {
+    "results_recomputed": true,
+    "full_precision_score_comparisons": 360,
+    "max_absolute_score_error": 4.440892098500626e-16,
+    "score_tolerance": 1e-10,
+    "published_table_comparison": "Compare at the original four-decimal reporting precision",
+    "hss_first_counts": {
+      "NGR": 6,
+      "T-PGNN": 2,
+      "PM-GP": 2
+    },
+    "hss_positive_counts": {
+      "HAPP": 7,
+      "NGR": 10,
+      "PM-GP": 6,
+      "T-PGNN": 10
+    },
+    "threshold_descriptions_verified": true,
+    "threshold_p_values_reproduced": true,
+    "case_direction_counts": {
+      "HAPP": 2,
+      "NGR": 6,
+      "PM-GP": 0,
+      "T-PGNN": 5
+    },
+    "full_retraining_verified": false,
+    "figures_are_numeric_reproductions_not_pixel_identical": true
+  },
+  "data_rebuild": {
+    "daily_data_and_origins_rebuilt": true,
+    "source": "Ten published station subsets, not the original national archive",
+    "tolerance": 1e-10
+  },
+  "smoke": {
+    "mode": "smoke",
+    "checks": [
+      {
+        "method": "M4r",
+        "site": "chaohu",
+        "rows": 560,
+        "all_seven_days": true,
+        "scope": "training-only pseudo-test"
+      },
+      {
+        "method": "M3",
+        "site": "chaohu",
+        "rows": 560,
+        "all_seven_days": true,
+        "scope": "training-only pseudo-test"
+      },
+      {
+        "method": "M1",
+        "site": "chaohu",
+        "rows": 560,
+        "all_seven_days": true,
+        "scope": "training-only pseudo-test"
+      },
+      {
+        "method": "M2",
+        "site": "chaohu",
+        "rows": 560,
+        "all_seven_days": true,
+        "scope": "training-only pseudo-test"
+      }
+    ],
+    "full_formal_retraining_verified": false
+  },
+  "full_formal_training_executed": false,
+  "public_redownload_verified": false
+}

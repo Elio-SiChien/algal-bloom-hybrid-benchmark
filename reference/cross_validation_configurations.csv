@@ -1,0 +1,41 @@
+method,waterbody,mean_cv_mae_log10,cv_basis,selected_configuration,tpe_trials,evaluation_scored_origins,evaluation_failed_origins
+M1,chaohu,0.22555922516801774,seed0,"{""d_model"": 64, ""n_heads"": 4, ""n_enc_layers"": 1, ""n_dec_layers"": 1, ""dim_ff"": 64, ""dropout"": 0.10814959055682331, ""lr_net"": 0.00018638381580927336, ""lr_theta"": 0.005170580504693676, ""weight_decay"": 0.0028940679484415316, ""lambda_phys"": 0.0220220549580269, ""batch_size"": 16}",100.0,270,0
+M1,dianchi,0.12949885218978283,seed0,"{""d_model"": 64, ""n_heads"": 4, ""n_enc_layers"": 2, ""n_dec_layers"": 1, ""dim_ff"": 64, ""dropout"": 0.11386734173608902, ""lr_net"": 0.00046632733801573806, ""lr_theta"": 0.001992700096913427, ""weight_decay"": 0.0018750998529329873, ""lambda_phys"": 0.9159768046756793, ""batch_size"": 32}",100.0,272,0
+M1,erhai,0.15599004924539417,seed0,"{""d_model"": 32, ""n_heads"": 4, ""n_enc_layers"": 3, ""n_dec_layers"": 1, ""dim_ff"": 128, ""dropout"": 0.12151663874375392, ""lr_net"": 0.0006028756845991277, ""lr_theta"": 0.01569403354840212, ""weight_decay"": 2.0267240159450606e-05, ""lambda_phys"": 5.882236899681254, ""batch_size"": 16}",100.0,255,0
+M1,fuxian,0.21967110832244047,seed0,"{""d_model"": 64, ""n_heads"": 2, ""n_enc_layers"": 1, ""n_dec_layers"": 2, ""dim_ff"": 32, ""dropout"": 0.17772665676702615, ""lr_net"": 0.0020251997785353405, ""lr_theta"": 0.015994417704134335, ""weight_decay"": 0.006980973431318763, ""lambda_phys"": 1.683247904962829, ""batch_size"": 32}",100.0,274,0
+M1,hedi,0.12655059754544143,seed0,"{""d_model"": 32, ""n_heads"": 4, ""n_enc_layers"": 1, ""n_dec_layers"": 1, ""dim_ff"": 64, ""dropout"": 0.10318738140247863, ""lr_net"": 0.0002139631325987954, ""lr_theta"": 0.0010058466566811354, ""weight_decay"": 0.0008040660239128427, ""lambda_phys"": 0.013227814296258291, ""batch_size"": 64}",100.0,277,0
+M1,hongze,0.14228500853864184,seed0,"{""d_model"": 32, ""n_heads"": 2, ""n_enc_layers"": 2, ""n_dec_layers"": 1, ""dim_ff"": 64, ""dropout"": 0.06028782645804276, ""lr_net"": 0.0012228345986169049, ""lr_theta"": 0.019851490509445752, ""weight_decay"": 0.0031469396129523847, ""lambda_phys"": 4.234313580164307, ""batch_size"": 32}",100.0,277,0
+M1,liangzi,0.10444051711910121,seed0,"{""d_model"": 32, ""n_heads"": 2, ""n_enc_layers"": 3, ""n_dec_layers"": 2, ""dim_ff"": 32, ""dropout"": 0.033998051371918074, ""lr_net"": 0.0015865960786127958, ""lr_theta"": 0.007760950609937835, ""weight_decay"": 0.00016264694828937935, ""lambda_phys"": 1.9642044209482081, ""batch_size"": 32}",100.0,242,0
+M1,shahu,0.19331971876150125,seed0,"{""d_model"": 32, ""n_heads"": 4, ""n_enc_layers"": 1, ""n_dec_layers"": 1, ""dim_ff"": 64, ""dropout"": 0.13803722402207932, ""lr_net"": 0.001021627082304134, ""lr_theta"": 0.015166579711692373, ""weight_decay"": 0.006265226345678597, ""lambda_phys"": 6.597823709695268, ""batch_size"": 16}",100.0,261,0
+M1,taihu,0.14717897815950026,seed0,"{""d_model"": 32, ""n_heads"": 2, ""n_enc_layers"": 1, ""n_dec_layers"": 2, ""dim_ff"": 128, ""dropout"": 0.01359549039243367, ""lr_net"": 0.0021550680108457687, ""lr_theta"": 0.015200838159563863, ""weight_decay"": 0.0008645818149359155, ""lambda_phys"": 2.1445645377032356, ""batch_size"": 32}",100.0,268,0
+M1,yinghu,0.1502676014580645,seed0,"{""d_model"": 32, ""n_heads"": 4, ""n_enc_layers"": 1, ""n_dec_layers"": 1, ""dim_ff"": 64, ""dropout"": 0.20049117671642125, ""lr_net"": 0.001149506502875681, ""lr_theta"": 0.0021997489636368887, ""weight_decay"": 0.007012663806099531, ""lambda_phys"": 2.230640167628932, ""batch_size"": 16}",100.0,277,0
+M2,chaohu,0.3979164522383569,five-seed median,Fixed configuration,,270,0
+M2,dianchi,0.746758899412736,five-seed median,Fixed configuration,,272,0
+M2,erhai,0.34064968455743894,five-seed median,Fixed configuration,,255,0
+M2,fuxian,0.5351844842225618,five-seed median,Fixed configuration,,274,0
+M2,hedi,0.15101161530227253,five-seed median,Fixed configuration,,277,0
+M2,hongze,0.30981529234409816,five-seed median,Fixed configuration,,277,0
+M2,liangzi,0.34132371294563424,five-seed median,Fixed configuration,,242,0
+M2,shahu,0.48797327158177556,five-seed median,Fixed configuration,,261,0
+M2,taihu,0.23026467880401513,five-seed median,Fixed configuration,,268,0
+M2,yinghu,0.39380258963985537,five-seed median,Fixed configuration,,277,0
+M3,chaohu,0.3708893880422788,five-seed median,Fixed configuration,,270,0
+M3,dianchi,0.16708916527824222,five-seed median,Fixed configuration,,272,0
+M3,erhai,0.23563980597186884,five-seed median,Fixed configuration,,255,0
+M3,fuxian,0.37914364491421065,five-seed median,Fixed configuration,,274,0
+M3,hedi,0.13443170847933922,five-seed median,Fixed configuration,,277,0
+M3,hongze,0.24712019772971877,five-seed median,Fixed configuration,,277,0
+M3,liangzi,0.11334202469336502,five-seed median,Fixed configuration,,242,0
+M3,shahu,0.2591982825032602,five-seed median,Fixed configuration,,261,0
+M3,taihu,0.1548117863844593,five-seed median,Fixed configuration,,268,0
+M3,yinghu,0.21094049846437224,five-seed median,Fixed configuration,,277,0
+M4r,chaohu,0.279,seed0,30,,270,0
+M4r,dianchi,0.12603,seed0,14,,272,0
+M4r,erhai,0.16277,seed0,14,,255,0
+M4r,fuxian,0.23734,seed0,14,,274,0
+M4r,hedi,0.13403,seed0,30,,277,0
+M4r,hongze,0.16016,seed0,60,,277,0
+M4r,liangzi,0.124,seed0,30,,242,0
+M4r,shahu,0.20999,seed0,30,,261,0
+M4r,taihu,0.17002,seed0,60,,268,0
+M4r,yinghu,0.19037,seed0,60,,277,0

@@ -1,0 +1,11 @@
+.venv*/
+.cache/
+outputs/
+__pycache__/
+*.pyc
+.env
+.cdsapirc
+*.pkl
+optuna.db
+# Optional local CI template; publication credentials do not request workflow scope.
+.github/workflows/verify.yml

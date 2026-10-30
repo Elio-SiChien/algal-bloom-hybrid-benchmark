@@ -1,0 +1,263 @@
+{
+  "version": "search_space_v1",
+  "frozen": "2026-10-15",
+  "decision": "D-045",
+  "source": "vault 00_项目控制台/方案/20261015_搜索范围草案.md",
+  "notes": [
+    "Ranges use training blocks 1-5 only; never changed after seeing test results.",
+    "Cheng temperature term exp[beta*(T-20)/T] uses degC; T<1 degC is evaluated as 1 degC (M3, M4).",
+    "2026-10-18 D-046: M2 a, b solved by bounded least squares for each candidate; bounds unchanged.",
+    "2026-10-18 D-047: final prediction of seeded methods = per-origin, per-lead median over the 5 seeds (finite outputs only).",
+    "2026-10-21 D-069: before the v3 formal runs, lower bounds of the N half-saturation constants widened to 0.01 mg/L (M1 Ksn, M2 KN, M4 KN; were 0.05/0.035/0.05) and M2 KP to 0.001 mg/L (was 0.0015), so that nutrient limitation can approach 1 (>= 0.9) at the median 2023 TN/TP of every waterbody (oligotrophic Lake Fuxian TN 0.14, TP 0.010 mg/L; Lake Erhai TN 0.27). Only widened, never narrowed (D-045). Checked on 2023 training data only.",
+    "2026-10-21 D-071 (audit A-01, A-07): T-PGNN restored to the original encoder-decoder layout (X_E: shortwave, precipitation; X_D: algal density, water temperature, TN, TP), Min-Max scaling, tuned set as the original (encoder/decoder layers, embedding dim, heads, feed-forward dim, two learning rates, weight decay, dropout, lambda), batch size fixed at 366. TPE budget stays 100 trials (D-017/D-037; original 200).",
+    "2026-10-21 D-072: T-PGNN batch size tuned in {16,32,64} instead of the original fixed 366. With ~350 training samples per waterbody, 366 gives one update per epoch (the original had ~6 per epoch with 2185 samples) and under-trained the model in the Lake Dianchi check (CV MAE 0.18/0.24 vs 0.11-0.16/0.19-0.23 with 16-64)."
+  ],
+  "M1": {
+    "tpe_max_trials": 100,
+    "max_epochs": 300,
+    "early_stop_patience": 30,
+    "history_days": 7,
+    "hyper": {
+      "d_model": {
+        "choice": [
+          16,
+          32,
+          64
+        ]
+      },
+      "n_heads": {
+        "choice": [
+          2,
+          4
+        ]
+      },
+      "n_enc_layers": {
+        "choice": [
+          1,
+          2,
+          3
+        ]
+      },
+      "n_dec_layers": {
+        "choice": [
+          1,
+          2,
+          3
+        ]
+      },
+      "dim_ff": {
+        "choice": [
+          32,
+          64,
+          128
+        ]
+      },
+      "dropout": {
+        "uniform": [
+          0.0,
+          0.3
+        ]
+      },
+      "lr_net": {
+        "loguniform": [
+          0.0001,
+          0.003
+        ]
+      },
+      "lr_theta": {
+        "loguniform": [
+          0.001,
+          0.03
+        ]
+      },
+      "weight_decay": {
+        "loguniform": [
+          1e-06,
+          0.01
+        ]
+      },
+      "lambda_phys": {
+        "loguniform": [
+          0.001,
+          10.0
+        ]
+      },
+      "batch_size": {
+        "choice": [
+          16,
+          32,
+          64
+        ]
+      }
+    },
+    "theta_bounds": {
+      "A_per_day": [
+        0.1,
+        1.5
+      ],
+      "B_per_degC": [
+        0.02,
+        0.1
+      ],
+      "Ksn_mgL": [
+        0.01,
+        3.0
+      ],
+      "Ksp_mgL": [
+        0.001,
+        0.2
+      ],
+      "KI_MJ_m2_day": [
+        1.0,
+        30.0
+      ],
+      "D_per_day": [
+        0.0,
+        2.0
+      ]
+    },
+    "seeds": 5
+  },
+  "M2": {
+    "bayesopt_max_evals": 200,
+    "seeds": 5,
+    "lag_days": 7,
+    "KM_mgL_fixed": 22.5,
+    "bounds": {
+      "mu_max_per_day": [
+        0.5,
+        3.0
+      ],
+      "kG": [
+        0.0,
+        1.0
+      ],
+      "Topt_degC": [
+        15.0,
+        30.0
+      ],
+      "Iopt_umol_m2_s": [
+        50.0,
+        1000.0
+      ],
+      "KN_mgL": [
+        0.01,
+        3.0
+      ],
+      "KP_mgL": [
+        0.001,
+        0.35
+      ],
+      "Mmax_per_day": [
+        0.1,
+        0.5
+      ],
+      "kR_per_day": [
+        0.01,
+        0.5
+      ],
+      "thetaR": [
+        1.02,
+        1.14
+      ],
+      "S_const_per_day": [
+        0.0,
+        0.2
+      ],
+      "a": [
+        0.0,
+        1.0
+      ],
+      "b_log10": [
+        3.0,
+        9.0
+      ]
+    },
+    "ab_mode": "least_squares (D-046): BO searches the 10 kinetic parameters; a, b solved in closed form within their bounds"
+  },
+  "M3": {
+    "seeds": 5,
+    "pso": {
+      "particles": 30,
+      "max_iter": 500,
+      "stall_iter": 20
+    },
+    "architecture": "5-5-1 tansig/linear",
+    "integrator": "RK4",
+    "bounds": {
+      "net_weights_and_biases": [
+        -1.0,
+        1.0
+      ],
+      "n_net_params": 36,
+      "sigma_max_per_day": [
+        0.01,
+        1.0
+      ],
+      "beta_sigma": [
+        0.0,
+        10.0
+      ]
+    },
+    "input_scaling": "min-max of training blocks to [-1,1], no clipping"
+  },
+  "M4": {
+    "Tref_degC": 20.0,
+    "mech_inits": 10,
+    "gp_inits": 10,
+    "mech_bounds": {
+      "mu_max_per_day": [
+        0.1,
+        3.0
+      ],
+      "beta_mu": [
+        0.0,
+        10.0
+      ],
+      "KP_mgL": [
+        0.001,
+        0.2
+      ],
+      "KN_mgL": [
+        0.01,
+        3.0
+      ],
+      "KI_W_m2": [
+        10.0,
+        300.0
+      ],
+      "sigma_max_per_day": [
+        0.01,
+        1.0
+      ],
+      "beta_sigma": [
+        0.0,
+        10.0
+      ]
+    },
+    "gp": {
+      "kernel": "constant mean + short smooth + quasi-periodic (Cheng 2025 App. C)",
+      "window_days": {
+        "choice": [
+          14,
+          30,
+          60
+        ]
+      },
+      "length_scale_days": [
+        1.0,
+        60.0
+      ],
+      "period_days": [
+        3.0,
+        60.0
+      ],
+      "noise_var_ln": [
+        0.0001,
+        1.0
+      ],
+      "min_errors_in_window": 5,
+      "fallback": "mechanistic trajectory only"
+    }
+  }
+}

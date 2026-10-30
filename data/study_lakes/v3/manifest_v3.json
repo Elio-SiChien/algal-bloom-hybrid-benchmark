@@ -1,0 +1,109 @@
+{
+  "version": "v3",
+  "status": "locked",
+  "created": "2026-10-20T16:46:42",
+  "qc_version": "qc-v1.3",
+  "source": "cnemc_algae_national_4h.csv.gz",
+  "source_sha256": "ae998aa4972334c9413fdb5aa89e6b280c50485c23fca9b07a0cc068dba01e74",
+  "sites": {
+    "dianchi": {
+      "basin": "滇池流域",
+      "station": "观音山西",
+      "lon": 102.6756,
+      "lat": 24.8372,
+      "daily_sha256": "e34755eb60597891f2aaf23746937a57c5174c8b8cd0d74432286891dc330b84",
+      "origin_list_sha256": "52196f9814ade6fde50f5cf4e2c0dd5e4e2becbb96561bde5718a433c4ec23ca"
+    },
+    "chaohu": {
+      "basin": "巢湖流域",
+      "station": "龟山",
+      "lon": 117.8069,
+      "lat": 31.6111,
+      "daily_sha256": "58f13905aba05fd874568aa9bc9426078c6bd38489b574024b9bd5a2587d5eea",
+      "origin_list_sha256": "e453f652e64ca18278cd67fdfd6042fc7354f65a5149075031d31607459f9dc6"
+    },
+    "taihu": {
+      "basin": "太湖流域",
+      "station": "锡东水厂",
+      "lon": 120.3722,
+      "lat": 31.4483,
+      "daily_sha256": "b6f0f42b2e8f38cd08d836fd4555247fe4d05fb6a0077822370201354df6f8fd",
+      "origin_list_sha256": "bd95a2201d2781726d3a51f27ecfe8db968ffe7a997efced5064fb9997aaa111"
+    },
+    "erhai": {
+      "basin": "西南诸河",
+      "station": "洱海湖心",
+      "lon": 100.1875,
+      "lat": 25.7633,
+      "daily_sha256": "b421c3e835f07d461d0eef2ba2cdf6fcf498eb19996d621d96f1624456133774",
+      "origin_list_sha256": "f516d9af405e26186ad3616691b1ec11edfd38e01f9538c7642c91a1eb0e7276"
+    },
+    "fuxian": {
+      "basin": "珠江流域",
+      "station": "抚仙湖心",
+      "lon": 102.8931,
+      "lat": 24.5265,
+      "daily_sha256": "5a15b169318244af9c084ef810aa11dda4dcba6d3be7c40588b8402254a35c8f",
+      "origin_list_sha256": "d6d895797c2cee20e5bbbf9e81692da8310d16c65e34265e8fba2da0e457c84c"
+    },
+    "liangzi": {
+      "basin": "长江流域",
+      "station": "西梁子湖湖南",
+      "lon": 114.4466,
+      "lat": 30.1954,
+      "daily_sha256": "c494f7664fa691186fd199425ce5132914226ec091eb4e045bc15228d9a065e8",
+      "origin_list_sha256": "36df9284736ddb248206cbe3ea7abde66e9d76e062f0892d41ae3a73fd1dc5de"
+    },
+    "hongze": {
+      "basin": "淮河流域",
+      "station": "临淮乡",
+      "lon": 118.3691,
+      "lat": 33.273,
+      "daily_sha256": "3066c0789571478d33f1ff69ba47d054bfd6d80b4569fd8e5be855d8e1bf5f42",
+      "origin_list_sha256": "341a8caabf21ec67b7d9f7965bb29728961bd4e672b2187c9cfe2c9a92d46328"
+    },
+    "shahu": {
+      "basin": "黄河流域",
+      "station": "沙湖",
+      "lon": 106.3728,
+      "lat": 38.817,
+      "daily_sha256": "594aca9b83a7053b3eed83447b490c56df5229d1927031e795b46ed66188a7ce",
+      "origin_list_sha256": "c7ec5cfea7d0bb7aadba78e0c46a133080d6e2b9e32ca6e79c806b3d6345ca73"
+    },
+    "hedi": {
+      "basin": "珠江流域",
+      "station": "渠首",
+      "lon": 110.3126,
+      "lat": 21.7088,
+      "daily_sha256": "8d8d0cc9f9ac027491073c7a7b3b8749716235accfec840908c39ac49dd14c89",
+      "origin_list_sha256": "ce5af24dd3d23f88bb70988099fbe47f3d2a09ffdd2a15d8322c74f3d9cc5eef"
+    },
+    "yinghu": {
+      "basin": "长江流域",
+      "station": "瀛湖坝前",
+      "lon": 108.8361,
+      "lat": 32.6041,
+      "daily_sha256": "b5e0e26636ecc2ba0bc07a9b0b25d73bb96f7e6fb492ed01357d3c8210f79868",
+      "origin_list_sha256": "679e5d31649dd96af2798a8d44eeb6f562b7e41abc7cf0973d7def414ea69cd3"
+    }
+  },
+  "origins_csv_sha256": "d4bb2f9345c68ccf5133ca1c9f2375b67cf39d73805e08fa86427b63e3b858cc",
+  "era5_sha256": {
+    "dianchi": "5c866c8c1a61f2cbdcca74e5f430ad979b1c84a7b90889f9bce0dcb05289ea21",
+    "chaohu": "7cde368d54a52a57288e282468fe333d9a6496e8bcb7e69e2a2564e3e2e43275",
+    "taihu": "29e221302a6ec9635bcc6242b1bc3f270d79532588176a41c20381dea9e3ec5a",
+    "erhai": "c00bb79238e800bb0cc08d8f006452982569d07f583a11f7506a93ec2c1a9564",
+    "fuxian": "0f1db6f30c0a4a845dbed111919ab338a79d203456c6a2cc29b5cf6776a7ad87",
+    "liangzi": "e3886cd3e57736735a86db50c12c90a527a99dc231118fa1f1027c8dc09249af",
+    "hongze": "ad100c86e17d4c38cc195539ff02632b450d32c9eb90f4f12c2745bc70777dfa",
+    "shahu": "7893f64e0883c76403763b0dc71ba75fce741e6d7167bf23551a217b66b5acf3",
+    "hedi": "80f2064c87c63a086ff484f676f78dbbf5f6eb4aca0a6c3d244de19163ba262f",
+    "yinghu": "1c0d0cd91842e087fbf1d5107e91231a2351b3e5b718618a2a521205870f80f8"
+  },
+  "era5_points_sha256": "406a64a6b3766d82500d258932f993b8d8d316386aa6f715525c489062fa735e",
+  "search_space_sha256": "6465ce745dcd48299d6388d9c64cfc272ebca550694d8bc20cef7f2cd3ffd75b",
+  "addendum": "R6-06 hashes added 2026-10-20T17:27:49; data and origins unchanged",
+  "addendum_2": "D-069 search space widened 2026-10-21T06:30:25; search_space_sha256 updated; data and origins unchanged",
+  "addendum_3": "D-071 T-PGNN search space aligned with the original 2026-10-21T06:39:55; data and origins unchanged",
+  "addendum_4": "D-072 T-PGNN batch size tuned 2026-10-21T09:26:01; data and origins unchanged"
+}

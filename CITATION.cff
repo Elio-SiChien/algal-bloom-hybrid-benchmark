@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Please cite this tagged research software and its upstream model/data sources."
+title: "Algal bloom hybrid benchmark: four process–machine-learning adaptations across ten waterbodies"
+type: software
+authors:
+  - family-names: Qiu
+    given-names: Siqian
+version: 1.0.0-review
+license: MIT
+repository-code: "https://github.com/Elio-SiChien/algal-bloom-hybrid-benchmark"

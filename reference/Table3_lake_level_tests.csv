@@ -1,0 +1,5 @@
+method,n_lakes,median_skill,lakes_better_than_persistence,wilcoxon_p_raw,wilcoxon_p_holm
+HAPP,10,-1.0119,0,1.0,1.0
+NGR,10,0.0026,5,0.7842,1.0
+T-PGNN,10,-0.03,4,0.9033,1.0
+PM-GP,10,-0.0485,1,0.998,1.0

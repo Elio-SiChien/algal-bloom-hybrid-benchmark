@@ -1,0 +1,8 @@
+# Frozen scientific files retain their exact exported bytes on every OS.
+experiments/** -text
+data/** -text
+reference/** -text
+*.pdf binary
+*.svg binary
+*.py text eol=lf
+experiments/** -text
