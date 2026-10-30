@@ -14,3 +14,5 @@ The frozen search_space_v1.json filename is retained to preserve its original ch
 Internal support for earlier datasets remains where the frozen imports/hash code requires it. The public entry always selects V3; old dataset branches are not additional experiments supplied by this release.
 
 Future meteorology is known reanalysis. This comparison does not demonstrate operational forecast benefits or isolate the causal effect of coupling position from architecture, state inputs and optimisation differences.
+
+Historical comments and search-space notes are retained to preserve frozen-source checksums. In particular, an earlier note says batch size 366; the executed T-PGNN search and saved configurations use choices 16, 32 and 64. The implemented choices and archived trial/configuration records, not obsolete comments, describe the formal runs.

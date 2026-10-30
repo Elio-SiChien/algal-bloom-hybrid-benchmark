@@ -71,3 +71,5 @@ Numerical figures are regenerated from data. Their display layout may differ fro
 ## Reuse and citation
 
 Original benchmark code is MIT licensed. Third-party data and cartography retain their own terms; see DATA_LICENSE.md and THIRD_PARTY_NOTICES.md. Cite this repository's tagged release using CITATION.cff, the upstream model papers, CNEMC monitoring data and ERA5-Land. Paper DOI and additional authors will be added once confirmed; no placeholder DOI is used.
+
+Public release download verification: [anonymous fixed-tag checks](docs/PUBLICATION.md).
