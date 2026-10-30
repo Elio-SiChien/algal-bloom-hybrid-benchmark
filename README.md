@@ -45,9 +45,10 @@ After a successful run, open `outputs/results_<timestamp>/verification.json`. Th
 See [offline use, outputs and advanced commands](docs/REPRODUCING.md).
 
 <a id="code-and-data"></a>
-## Are the code and data included?
+<a id="are-the-code-and-data-included"></a>
+## Code and data
 
-**Yes. Core code and the ten-station inputs are in Git; formal predictions are in the public Release.**
+**This repository provides the core code and ten-station inputs; formal predictions are distributed through the public Release.**
 
 | Material | Location | What is included |
 |---|---|---|
@@ -60,7 +61,8 @@ See [offline use, outputs and advanced commands](docs/REPRODUCING.md).
 The Release ZIP has **250 checksum-verified members**. It is fetched automatically by `results`, so cloning alone does not download the formal prediction archive. The full national source archive and complete pretrained checkpoints are not included; they are not needed to recompute the published results.
 
 <a id="what-is-reproduced"></a>
-## Reproduction status
+<a id="reproduction-status"></a>
+## Reproduction scope and verification
 
 The fixed review source and prediction archive were downloaded anonymously into a new directory and checked again.
 
@@ -69,7 +71,7 @@ The fixed review source and prediction archive were downloaded anonymously into 
 | Recalculate paper metrics, tests and numerical figures | **Passed:** 360 full-precision comparisons; largest difference `4.44e-16` (tolerance `1e-10`) |
 | Rebuild daily data and forecast origins | **Passed:** reconstructed from the ten raw station subsets |
 | Run all four training–prediction pipelines | **Passed at smoke-test scale:** one waterbody, reduced budgets, held-out 2023 data |
-| Retrain all four methods across all ten waterbodies | Entry provided; **not fully rerun or verified** in this release task |
+| Retrain all four methods across all ten waterbodies | Entry provided; **not fully rerun or verified** for this release |
 | Load four ready-made pretrained models | **Not available:** complete checkpoints were not retained |
 
 [Read the verification report](docs/VERIFICATION.md) · [Public-download proof](docs/PUBLICATION.md)
@@ -78,7 +80,8 @@ This verifies numerical result reproduction and small-scale pipeline execution. 
 
 <a id="four-method-smoke-test-and-full-training"></a>
 <a id="rebuild-the-selected-station-daily-data"></a>
-## Choose a workflow
+<a id="choose-a-workflow"></a>
+## Execution modes
 
 Below, `python` means your virtual-environment interpreter: `.venv\Scripts\python.exe` on Windows or `.venv/bin/python` on Linux/macOS. Use it just as in the quick start, or activate the environment first.
 
@@ -97,7 +100,8 @@ Run the input-integrity and failure checks with:
 python -m unittest discover -s tests -v
 ```
 
-## What is being compared?
+<a id="what-is-being-compared"></a>
+## Study and integration mechanisms
 
 | Mechanism | Method | How process knowledge enters |
 |---|---|---|
@@ -106,7 +110,9 @@ python -m unittest discover -s tests -v
 | Alongside | T-PGNN | Penalize departures from process relationships during network training |
 | Potential | HAPP | Calculate environmental growth potential, then map it to future density |
 
-![Study overview: ten-waterbody observations, four hybrid implementations, and seven-day forecasts of change. Explanatory diagram, not a result plot.](assets/benchmark-overview.png)
+[![Four process–AI integration mechanisms and the common seven-day forecasting task.](assets/Fig1_hybrid_framework.png)](assets/Fig1_hybrid_framework.pdf)
+
+Four process–AI integration mechanisms and the common seven-day forecasting task. Click the figure to open the original PDF.
 
 <a id="scientific-conditions-to-retain"></a>
 Models are fitted separately per waterbody on **2023** and evaluated on **2024**. Scoring excludes interpolated targets. Future weather is **ERA5-Land reanalysis**, not an operational weather forecast. Budgets differ by method; the comparison concerns these four concrete implementations. See [method sources and adaptations](docs/METHODS.md).

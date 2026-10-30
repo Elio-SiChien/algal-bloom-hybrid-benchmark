@@ -6,7 +6,7 @@
 
 [![Python 3.10](https://img.shields.io/badge/Python-3.10-3776AB?logo=python&logoColor=white)](requirements-analysis.txt) [![Code license: MIT](https://img.shields.io/badge/Code-MIT-2B7A68)](LICENSE) [![Review release](https://img.shields.io/badge/Release-v1.0.0--review-546E7A)](https://github.com/Elio-SiChien/algal-bloom-hybrid-benchmark/releases/tag/v1.0.0-review)
 
-[快速开始](#快速开始) · [代码与数据](#代码与数据都上传了吗) · [复现证据](#别人能复现到什么程度) · [固定审稿版本](https://github.com/Elio-SiChien/algal-bloom-hybrid-benchmark/releases/tag/v1.0.0-review)
+[快速开始](#快速开始) · [代码与数据](#代码与数据) · [复现证据](#复现范围与验证状态) · [固定审稿版本](https://github.com/Elio-SiChien/algal-bloom-hybrid-benchmark/releases/tag/v1.0.0-review)
 
 本仓库配套论文 *Where process knowledge should enter machine learning for 7-day algal bloom forecasting*，供审稿人检查实验，也供研究者复用四种机理–AI方法。
 
@@ -43,9 +43,10 @@ Windows无需激活环境，直接运行：
 
 离线使用、完整输出及进阶命令见[详细复现指南](docs/REPRODUCING.md)。
 
-## 代码与数据都上传了吗？
+<a id="代码与数据都上传了吗"></a>
+## 代码与数据
 
-**已上传。核心代码和十站输入在Git仓库，正式预测在公开Release附件。**
+**本仓库提供核心代码和十站实验输入，正式预测保存在公开Release附件中。**
 
 | 内容 | 位置 | 包含什么 |
 |---|---|---|
@@ -57,7 +58,8 @@ Windows无需激活环境，直接运行：
 
 预测ZIP有 **250个逐一校验的文件成员**。`results`会自动下载，因此仅克隆仓库时不会同时下载正式预测附件。全国原始数据全集和完整预训练模型权重不在本包中；重算论文结果不依赖它们。
 
-## 别人能复现到什么程度？
+<a id="别人能复现到什么程度"></a>
+## 复现范围与验证状态
 
 已将固定审稿版本和预测包匿名下载到新目录，再次执行以下检查：
 
@@ -66,14 +68,15 @@ Windows无需激活环境，直接运行：
 | 论文指标、检验与数值图表重算 | **通过**：360项全精度比较，最大差异`4.44e-16`，容差`1e-10` |
 | 原始子集重建日数据及起点 | **通过**：由十站原始观测重新处理 |
 | 四法训练—七日预测流程 | **小规模试跑通过**：一个水体、缩减预算、2023年内留出验证 |
-| 四法×十水体完整重新训练 | 已提供入口；**本轮未完整重跑及验收** |
+| 四法×十水体完整重新训练 | 已提供入口；**本版本尚未完成完整重训验证** |
 | 直接加载四法预训练模型 | **不提供**：完整模型检查点未保存 |
 
 [详细核验报告](docs/VERIFICATION.md) · [公开下载复核证据](docs/PUBLICATION.md)
 
 当前有实证支持的是“论文数值结果可重算、四法小规模流程能运行”，不能据此声称不同操作系统/GPU上的完整训练结果必然一致。上方徽章仅表示运行版本、代码许可和已存在的Release，不是实时CI通过标记。
 
-## 按需要选择运行方式
+<a id="按需要选择运行方式"></a>
+## 运行模式
 
 下表中的`python`指刚建立的虚拟环境解释器：Windows用`.venv\Scripts\python.exe`，Linux/macOS用`.venv/bin/python`；与快速开始保持一致，或先激活虚拟环境。
 
@@ -92,7 +95,8 @@ Windows无需激活环境，直接运行：
 python -m unittest discover -s tests -v
 ```
 
-## 四种方法具体怎样结合？
+<a id="四种方法具体怎样结合"></a>
+## 研究任务与耦合方式
 
 | 好记的标签 | 方法 | 耦合机制 |
 |---|---|---|
@@ -101,7 +105,9 @@ python -m unittest discover -s tests -v
 | 并行约束 Alongside | T-PGNN | 将偏离机理关系的程度加入网络训练损失 |
 | 潜力驱动 Potential | HAPP | 先计算环境生长潜力，再映射为未来藻量 |
 
-![研究流程示意：十水体观测经过四种混合方法，形成未来七日变化预测。本图为方法示意，不是实验结果图。](assets/benchmark-overview.png)
+[![四种机理–AI耦合方式及共同七日预测任务。](assets/Fig1_hybrid_framework.png)](assets/Fig1_hybrid_framework.pdf)
+
+四种机理–AI耦合方式及共同七日预测任务。点击图片可查看原始PDF。
 
 各水体分别使用 **2023年训练、2024年评价**；评价排除插值目标日。未来气象采用 **ERA5-Land事后再分析**，不是实际发布的天气预报。四法预算各有预设，本研究比较具体实现，不将差异完全归因于耦合位置。详见[方法来源与适配](docs/METHODS.md)。
 
